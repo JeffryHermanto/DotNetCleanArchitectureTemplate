@@ -206,7 +206,7 @@ dotnet ef migrations add <MigrationName> \
  --output-dir Persistence/Migrations
 ```
 
-### `AppDbContext.cs` example
+#### `AppDbContext.cs` example
 
 ```C#
 using CleanArchitecture.Domain.Entities;
@@ -220,7 +220,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 }
 ```
 
-### `AppDbContextFactory.cs` example
+#### `AppDbContextFactory.cs` example
 
 ```C#
 using Microsoft.EntityFrameworkCore;
@@ -251,6 +251,36 @@ public class AppDbContextFactory
     }
 }
 ```
+
+### Upgrade Outdated Packages
+
+#### 1. Install the tool:
+
+```shell
+dotnet tool install --global dotnet-outdated-tool
+```
+
+#### 2. Run it in the solution root:
+
+```shell
+dotnet outdated
+```
+
+#### 3. Automatically update all packages:
+
+```shell
+dotnet outdated --upgrade
+```
+
+📌 For a safer approach (to avoid major breaking changes):
+
+```shell
+dotnet outdated --upgrade --version-lock Minor
+```
+
+👉 Meaning:
+Minor → update only minor & patch versions
+Major → update all versions (higher risk)
 
 ## Notes
 
