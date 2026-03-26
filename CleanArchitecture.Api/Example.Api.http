@@ -1,0 +1,4 @@
+@host = http://localhost:5240
+
+GET {{host}}/
+Accept: application/json
