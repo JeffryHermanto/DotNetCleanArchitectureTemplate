@@ -254,5 +254,12 @@ public class AppDbContextFactory
 
 ## Notes
 
+- Rename `<YourSolutionName>` with this script command:
+
+  ```shell
+  chmod +x rebrand-dotnet.sh
+  ./rebrand-dotnet.sh CleanArchitecture <YourSolutionName>
+  ```
+
 - Adjust database provider and tools based on your stack
 - Extend layers as needed (e.g., adding Shared/Common project)
