@@ -27,30 +27,37 @@ The solution is structured into four main projects, following Clean Architecture
 <YourSolutionName>
 │
 ├── <YourSolutionName>.Api
+│   ├── Common/
+│   |   └── Extensions/
 │   ├── Endpoints/
 │   └── Middleware/
 |
 ├── <YourSolutionName>.Application
-│   ├── DTOs/
+│   ├── Common/
+│   |   └── Constants/
+│   ├── Enums/
+│   ├── Exceptions/
+│   ├── Interfaces/
+│   ├── Models/
 │   ├── Features/
 │   │   ├── FeatureOne/
 │   │   ├── FeatureTwo/
 │   │   └── FeatureThree/
 │   └── Utilities/
+|       └── SimpleMediator/
 |
 ├── <YourSolutionName>.Domain
 │   ├── Entities/
+│   ├── Enums/
+│   ├── Exceptions/
 │   ├── Interfaces/
-│   ├── Options/
 │   └── ValueObjects/
 |
 └── <YourSolutionName>.Infrastructure
     ├── External/
+    ├── Options/
     ├── Persistence/
-    |    ├── Migrations/
-    │    |── Repositories/
-    │    |── AppDbContext.cs
-    |    └── AppDbContextFactory.cs
+    │    └── Repositories/
     └── Services/
 ```
 

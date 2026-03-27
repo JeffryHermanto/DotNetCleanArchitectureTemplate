@@ -24,6 +24,8 @@
 
   <ItemGroup>
     <Folder Include="External/" />
+    <Folder Include="Options/" />
+    <Folder Include="Persistence/Repositories/" />
     <Folder Include="Services/" />
   </ItemGroup>
 

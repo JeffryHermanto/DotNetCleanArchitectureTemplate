@@ -13,8 +13,9 @@
 
   <ItemGroup>
     <Folder Include="Entities/" />
+    <Folder Include="Enums/" />
+    <Folder Include="Exceptions/" />
     <Folder Include="Interfaces/" />
-    <Folder Include="Options/" />
     <Folder Include="ValueObjects/" />
   </ItemGroup>
 
